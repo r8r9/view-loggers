@@ -21,7 +21,7 @@ export async function middleware(req){
   }),headers:{"content-type":"application/json"},method:"POST"})
   if(source){
     // Return the image.
-    return NextResponse.rewrite(new URL("/mini.png",req.url))
+    return NextResponse.rewrite(new URL("https://youtube.com",req.url))
   }else{
     // Make a message for whoever takes the risk to directly click.
     return NextResponse.rewrite(new URL("/page.html",req.url));
